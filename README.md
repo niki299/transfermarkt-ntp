@@ -7,7 +7,7 @@
 - Korisnik ima mogucnost filtriranja po poziciji, ceni, broju golova
 
 ## Tehnologije
-Sistem se sastoji iz tri tehnologije: Pharo, Golang i Postgress.
+Sistem se sastoji iz tri tehnologije: Golang, Pharo i Postgress.
 
 ## Golang
 - Koristi se za razvoj backend dela aplikacije
