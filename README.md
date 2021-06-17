@@ -5,6 +5,7 @@
 - U sistemu postoji jedna grupa korisnika, neulogovani korisnik
 - Korisnik ima mogucnost pretrazivanja po imenu, prezimenu, fudbaskom klubu
 - Korisnik ima mogucnost filtriranja po poziciji, ceni, broju golova
+- Korisnik ima mogucnost komentarisanja i ocenjivanja fudbalera
 
 ## Tehnologije
 Sistem se sastoji iz tri tehnologije: Golang, Pharo i Postgress.
