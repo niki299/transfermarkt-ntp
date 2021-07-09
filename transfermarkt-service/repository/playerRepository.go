@@ -3,6 +3,7 @@ package repository
 import (
 	"database/sql"
 	_ "github.com/lib/pq"
+	"log"
 	"transfermarkt/model"
 )
 
@@ -43,6 +44,6 @@ func FindAllPlayers() ([]model.Player, error) {
 
 func check(err error) {
 	if err != nil {
-		panic(err)
+		log.Fatal("Failed to open a DB connection: ", err)
 	}
 }
