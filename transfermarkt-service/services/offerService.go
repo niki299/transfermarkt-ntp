@@ -7,7 +7,7 @@ import (
 	"transfermarkt/repository"
 )
 
-func FindOffers(request *http.Request) ([]model.Offer, error) {
+func FindOffers(request *http.Request) ([]model.OfferResponse, error) {
 	searchData := model.SearchData{}
 
 	err := parse(request, &searchData)

@@ -15,7 +15,7 @@ func CreateRate(rate *model.Rate) (*model.Rate, error) {
 
 	defer db.Close()
 
-	insertQuery := `insert into "rate"("rateid", "playerid", "ratevalue") values($1, $2, $3)`
+	insertQuery := `insert into "rate"("rate_id", "offer_id", "ratevalue") values($1, $2, $3)`
 
 	_, er := db.Exec(insertQuery, rate.Id, rate.OfferId, rate.RateValue)
 	check(er)
