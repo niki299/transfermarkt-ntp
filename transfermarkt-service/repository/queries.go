@@ -10,7 +10,7 @@ var defaultQuery = `
 	AND LOWER(pl.club) LIKE '%' || LOWER($3) || '%'
 	AND pl.playerPosition LIKE '%' || $4 || '%'
 	AND pl.playervalue BETWEEN $5 AND $6
-	` + sortByPrice()
+	`
 
 var averageRate = `
 	SELECT offer.offer_id, avg(ratevalue)
@@ -26,6 +26,3 @@ var commentQuery = `
 	`
 
 //dodati za cenu i poziciju/
-func sortByPrice() string {
-	return ""
-}
